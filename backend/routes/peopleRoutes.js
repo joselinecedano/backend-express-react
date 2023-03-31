@@ -8,6 +8,8 @@ const {peopleCtrlr} = require('../controllers')
 //ROUTES - METHODS //
 router.get('/', peopleCtrlr.getPeople)
 router.post('/',peopleCtrlr.createPeople)
+router.put('/:id', peopleCtrlr.updatePerson)
+router.put('/:id', peopleCtrlr.deletedPerson)
 
 //EXPORT ROUTER
 module.exports = router
