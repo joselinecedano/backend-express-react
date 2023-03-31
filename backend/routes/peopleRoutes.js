@@ -9,7 +9,7 @@ const {peopleCtrlr} = require('../controllers')
 router.get('/', peopleCtrlr.getPeople)
 router.post('/',peopleCtrlr.createPeople)
 router.put('/:id', peopleCtrlr.updatePerson)
-router.put('/:id', peopleCtrlr.deletedPerson)
+router.delete('/:id', peopleCtrlr.deletedPerson)
 
 //EXPORT ROUTER
 module.exports = router

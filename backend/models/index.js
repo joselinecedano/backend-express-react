@@ -10,10 +10,10 @@ mongoose.connect(DATABASE_URL, {
 
 // ERROR/ SUCCESS HANDLING
 mongoose.connection
-  .on("open", () => console.log("Your are connected to mongoose"))
-  .on("close", () => console.log("Your are disconnected from mongoose"))
+  .on("open", () => console.log("You are connected to mongoose"))
+  .on("close", () => console.log("You are disconnected from mongoose"))
   .on("error", (error) => console.log(error));
-  
+
 //requiring our Schema
 module.exports = {
   People: require("./People.js"),
